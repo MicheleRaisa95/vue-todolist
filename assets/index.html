@@ -18,8 +18,8 @@
     <!-- inizio sezione main -->
     <main>
         <div class="container">
-            <!--  crea un campo di input collegato a newTodoTetx -->
-            <input v-model=newTodoText placeholder="Add Task" type="text">
+            <!--  crea un campo di input collegato a newTodoTetx aggiungo bonus1  -->
+            <input v-model=newTodoText @keyup.enter="addTodo" placeholder="Add Task" type="text">
             <!--  pulsante collegato al metodo addTodo -->
             <button @click="addTodo"> Add Task</button>
             <button id="add">Add section</button>
