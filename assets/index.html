@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--Inizio sezione header  -->
+    <header>
+        <img class="logo" src="./img/Logo.png" alt="logo">
+        <h1 class="logo font-logo">Toboolist</h1>
+    </header>
+    <!-- Fine sezione header -->
+<!-- Monto applicativo su elemento del dom -->
+<div id="app">
+    <!-- inizio sezione main -->
+    <main>
+        <div class="container">
+            <!--  crea un campo di input collegato a newTodoTetx -->
+            <input v-model=newTodoText placeholder="Add Task" type="text">
+            <!--  pulsante collegato al metodo addTodo -->
+            <button @click="addTodo"> Add Task</button>
+            <button id="add">Add section</button>
+            </div>
+            <!-- inizio elenco -->
+            <div class="list-container">
+                <ul>
+                    <li v-for="(todo, index) in todos" :key="index">
+                        <!-- aggiungo sbarramento se true -->
+                        <span :class="{ done: todo.done}">
+                            {{ todo.text }}
+                        </span>
+                    </li>
+                </ul>
+                <!-- <ol>
+                    <li>
+                        &#9207; New Task
+                        <ul>
+                            <li>
+                                &#9989; Quarterly Newsletter 
+                                <div class="rectangle editorial"> editorial</div>
+                                
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        &#9207; Today
+                        <ul>
+                            <li>
+                                &#9989; Recruiting blog post
+                                <div class="rectangle editorial"> editorial</div>
+                            </li>
+                            <li>
+                                &#9989; Mobile app launch 
+                                <div class="rectangle" id="q1-goals">
+                                    Q1 Goals
+                                </div>
+                            </li>
+                            <li>
+                                &#10060; Interview John H.
+                                <div class="rectangle" id="recruiting">
+                                    
+                                    recruiting
+                                </div>
+                            </li>
+                            <li>
+                                &#9989; Summit update to mobile storefronts
+                                <div class="rectangle" id="mobile">mobile</div>
+                            </li>
+                                
+                        </ul>
+                        &#9207; Upcoming
+                        <ul>
+                            <li>
+                                &#10060; schedule meeting with Alex
+                            </li>
+                            <li>&#9989; Homepage refresh
+                                <div class="rectangle" id="website">Website</div>
+                            </li>
+                            <li>
+                                &#9989; Onboard new Sales team members
+                                <div class="rectangle" id="sales">Sales</div>
+                            </li>
+                            <li>
+                                &#9989; Review editorial calendar
+                                <div class="rectangle editorial"> editorial</div>
+                            </li>
+                            
+                        </ul>
+                    </ol> -->
+                </div>
+                            <!-- fine elenco  -->
+                            
+                                
+    </main>
+    <!-- Fine sezione main -->
+</div>
+    <!-- Vue.js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- /Vue.js -->
+    <!-- JS -->
+    <script src="./js/main.js"></script>
+    <!-- /JS -->
+</body>
+</html>

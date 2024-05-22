@@ -35,7 +35,7 @@
 
 2. Lista dei task
  - crea una lista ul che itera su ogni elemento task in toDos.
- ogni elemento delle liste (li) ha:
+    ogni elemento delle liste (li) ha:
   * una classe che rende il testo sbarrato se done è true
   * un pulsante X che per rimuovere il task
 

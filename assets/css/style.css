@@ -1,0 +1,130 @@
+* {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+/* inizio sezione stile header*/
+header {
+    background-color: white;
+    border-bottom: 1px solid white;
+    margin-bottom: 50px;
+}
+.logo {
+    display: inline;
+    vertical-align: middle;
+    margin-left: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.font-logo {
+    font-size: 50px;
+    font-family: sans-serif;
+}
+/* fine sezione stile header*/
+
+/* inizio sezione main*/
+body {
+    background-color: lightgrey;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+button {
+    background-color: lightblue;
+    text-align: center;
+   color: white;
+   height: 50px;
+   width: 80px;
+   border-radius: 4px;
+   margin-left: 50px;
+   margin-top: 20px;
+   margin-bottom: 25px;
+   border: 2px solid lightblue
+}
+
+#add {
+    background-color: white;
+    color: gray;
+    border: 2px solid gray;
+
+}
+
+/* inizio sezione list container*/
+.list-container {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+ol { margin: 20px;
+
+}
+li {
+    list-style-type: none;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+.rectangle {
+    text-align:center;
+    margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: inline-block; 
+            margin-right: 10px;
+            border-radius: 30px;
+    
+}
+.editorial {
+    font-size: 15px;
+    background-color: blue;
+    color: white;
+    
+}
+
+#q1-goals {
+    font-size: 15px;
+    background-color: purple;
+    color: white;
+
+}
+
+#recruiting {
+    font-size: 15px;
+    background-color: green;
+    color: white;
+}
+
+#mobile {
+    font-size: 15px;
+    background-color: orange;
+    color: white;
+}
+
+#website {
+    font-size: 15px;
+    background-color: plum;
+    color: white;
+}
+
+#sales {
+    font-size: 15px;
+    background-color: limegreen;
+    color: white;
+}
+
+
+/* fine sezione list container*/
+/* fine sezione main*/
+
+/* aggiungo sbarramento se task ha valore true */
+
+.done {
+    text-decoration: line-through;
+}
