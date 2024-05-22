@@ -30,6 +30,9 @@ createApp({
         removeTodo(index) {
             this.todos.splice(index, 1);
             console.log('task rimossa:', this.todos)
+        },
+        toggleDone(index) {
+            this.todos[index].done = !this.todos[index].done
         }
     }
 }).mount('#app')
