@@ -32,6 +32,7 @@
                         <span :class="{ done: todo.done}">
                             {{ todo.text }}
                         </span>
+                        <button @click="removeTodo(index)">X</button>
                     </li>
                 </ul>
                 <!-- <ol>

@@ -26,6 +26,10 @@ createApp({
                 this.newTodoText = '';
                 console.log('task aggiunta:', this.todos);
             }
+        },
+        removeTodo(index) {
+            this.todos.splice(index, 1);
+            console.log('task rimossa:', this.todos)
         }
     }
 }).mount('#app')
